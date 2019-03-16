@@ -1,0 +1,15 @@
+<section class="view-one">
+  <h1> Hello view {{ViewOneCtrl.name}}
+    <span>{{ViewOneCtrl.CountStore.count}}</span>
+  </h1>
+</section>
+
+<div class="pokemons-container">
+  <div class="pokemon-card" ng-class="pokemon.info.types[0].type.name" ng-repeat="pokemon in ViewOneCtrl.pokemons">
+    <div>{{pokemon.info.types[0].type.name}}</div>
+    <img ng-src="{{pokemon.info.sprites.front_default}}">
+    <div class="pokemon-name">{{pokemon.name}}</div>
+  </div>
+</div>
+
+<title-example title="WOW!" click-message="You clicked me!"></title-example>
